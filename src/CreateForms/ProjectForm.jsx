@@ -138,9 +138,9 @@ const ProjectForm = () => {
                         {errors.agreementNumber?.type === 'required' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>This field is required</span>
                         )}
-                        {errors.agreementNumber?.type === 'maxLength' && (
+                        {/* {errors.agreementNumber?.type === 'maxLength' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>Name cannot exceed 20 characters</span>
-                        )}
+                        )} */}
                         <div className="bg-slate-100 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="number"
@@ -154,13 +154,13 @@ const ProjectForm = () => {
                         {errors.gstNumber?.type === 'required' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>This field is required</span>
                         )}
-                        {errors.gstNumber?.type === 'maxLength' && (
+                        {/* {errors.gstNumber?.type === 'maxLength' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>Name cannot exceed 20 characters</span>
-                        )}
+                        )} */}
                         <div className="bg-slate-100 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="text"
-                                {...register('gstNumber', { required: true, maxLength: 20 })}
+                                {...register('gstNumber', { required: true })}
                                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 outline-0 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                             />
                         </div>
@@ -186,13 +186,13 @@ const ProjectForm = () => {
                         {errors.extendedDuration?.type === 'required' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>This field is required</span>
                         )}
-                        {errors.extendedDuration?.type === 'maxLength' && (
+                        {/* {errors.extendedDuration?.type === 'maxLength' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>Name cannot exceed 20 characters</span>
-                        )}
+                        )} */}
                         <div className="bg-slate-100 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="text"
-                                {...register('extendedDuration', { required: true, maxLength: 20 })}
+                                {...register('extendedDuration', { required: true })}
                                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 outline-0 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                             />
                         </div>
@@ -203,13 +203,13 @@ const ProjectForm = () => {
                         {errors.billingAddress?.type === 'required' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>This field is required</span>
                         )}
-                        {errors.billingAddress?.type === 'maxLength' && (
+                        {/* {errors.billingAddress?.type === 'maxLength' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>Name cannot exceed 20 characters</span>
-                        )}
+                        )} */}
                         <div className="bg-slate-100 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="text"
-                                {...register('billingAddress', { required: true, maxLength: 20 })}
+                                {...register('billingAddress', { required: true })}
                                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 outline-0 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                             />
                         </div>
@@ -220,13 +220,13 @@ const ProjectForm = () => {
                         {errors.remarks?.type === 'required' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>This field is required</span>
                         )}
-                        {errors.remarks?.type === 'maxLength' && (
+                        {/* {errors.remarks?.type === 'maxLength' && (
                             <span className='text-red-500 text-sm mt-2 ml-2'>Name cannot exceed 50 characters</span>
-                        )}
+                        )} */}
                         <div className="bg-slate-100 flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-600 sm:max-w-md">
                             <input
                                 type="text"
-                                {...register('remarks', { required: true, maxLength: 50 })}
+                                {...register('remarks', { required: true})}
                                 className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 outline-0 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
                             />
                         </div>
